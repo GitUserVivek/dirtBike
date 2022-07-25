@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOdO</title>
+
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            margin: 0px;
+        }
+        
+        * {
+            transition: 2s;
+        }
+        
+        .container {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(gray, black);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .addTask {
+            outline: none;
+            height: 30px;
+            width: 300px;
+            background: linear-gradient(gray, black);
+            color: white;
+            border: solid;
+            padding: 10px;
+            border-radius: 10px 30px;
+        }
+        
+        .AddBtn {
+            outline: none;
+            height: 30px;
+            width: 80px;
+            background: linear-gradient(black, gray);
+            color: white;
+            border: solid;
+            padding: 10px 10px 30px 10px;
+            border-radius: 10px 30px;
+        }
+        
+        button {
+            outline: none;
+            height: 30px;
+            width: 80px;
+            background: linear-gradient(black, gray);
+            color: white;
+            border: solid;
+            padding: 10px 10px 30px 10px;
+            border-radius: 10px 30px;
+        }
+        
+        .listitem {
+            height: 20px !important;
+            width: 200px !important;
+        }
+        
+        .list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            user-select: none;
+        }
+        
+        .newTask {
+            height: 10px;
+            background: linear-gradient(gray, black);
+            color: white;
+            border: solid transparent;
+            padding: 10px;
+            border-radius: 10px 30px;
+            text-align: center;
+            width: 260px;
+        }
+        
+        .remove {
+            background: rgb(188, 0, 0);
+            transform: translateX(300px);
+            opacity: 0;
+        }
+        
+        .completed {
+            background: rgb(6, 255, 6);
+            transform: translateX(-300px);
+            /* opacity: 0; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
