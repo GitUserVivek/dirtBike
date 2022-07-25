@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 10;
+            user-select: none;
+            transition: 1s;
+            outline: none;
+        }
+        
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            background: black;
+            display: block;
+        }
+        
+        .Container {
+            width: 100%;
+        }
+        
+        .Logo {
+            position: relative;
+            left: -215px;
+            display: flex;
+            font-family: 'Frijole';
+            font-size: 50px;
+            color: white;
+            align-items: baseline;
+        }
+        
+        .Logo img {
+            height: 100px;
+            width: auto;
+        }
+        
+        #background {
+            position: absolute;
+            top: -120px;
+            width: 1350px;
+            left: 8px;
+            position: fixed;
+        }
+        
+        .Container .nav {
+            background: rgba(40, 35, 35, 0.5);
+            height: 150px;
+            color: white;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        .Container .nav ul {
+            list-style: none;
+            margin-right: 100px;
+        }
+        
+        .Container .nav ul li {
+            float: left;
+            margin: 50px;
+            cursor: pointer;
+        }
+        
+        .ordersContent {
+            position: relative;
+            height: 400px;
+            float: right;
+            right: 100px;
+            width: 300px;
+            background: white;
+            color: #000;
+            border-radius: 150px 10px;
+            box-shadow: inset 0px 0px 75px rgb(75, 58, 32);
+            margin: 0px;
+            z-index: 10;
+            transition: 1s;
+            opacity: 0.5;
+        }
+        
+        .ordersContent img {
+            border-radius: 50%;
+            float: right !important;
+            margin: 10px 20px;
+            box-shadow: 2px 0px 12px black;
+        }
+        
+        .ordersContent input::placeholder {
+            color: white;
+        }
+        
+        .ordersContent input {
+            margin: 20px 50px;
+            padding: 10px 20px;
+            border-radius: 10px 150px;
+            outline: none;
+            font-family: 'Frijole';
+            background: dimgrey;
+            color: rgb(33, 18, 0);
+        }
+        
+        .ordersContent button {
+            position: relative;
+            margin: 20px 100px;
+            background: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+        }
+        
+        .main {
+            position: absolute;
+            display: flex;
+            left: 150px;
+            font-family: 'Frijole';
+            float: inline-end;
+            font-size: 50px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        /* .main .word {
+            position: relative;
+        } */
+        
+        .main .word ul {
+            position: relative;
+            list-style: none !;
+            overflow: hidden;
+            height: 80px;
+            width: 235px;
+            margin-right: 0px;
+            text-align: center;
+        }
+        
+        .main .word ul li {
+            margin-bottom: 25px;
+            position: relative;
+            top: 0px
+        }
+        
+        #BuyList {
+            position: relative;
+            top: 0px;
+            color: rgb(75, 58, 32);
+        }
+    </style>
+    <title>Somthing</title>
+</head>
+
+<body>
+    <!-- BACKGROUND -->
+    <video loop time="2000s" id="background">
+        <source src="Intro/DirtBike.mp4" type="video/mp4" />
+    </video>
+    <!-- BACKGROUND  END-->
+
+    <div class="Container">
+        <div class="nav" id='vdoChange'>
+            <div class="Logo">
+                <img src="Images/Bike1.png"> DirtBike
+            </div>
+
+            <ul>
+                <li id="Home">Home</li>
+                <li id="Bikes">Bikes</li>
+                <li id="Tires">Tires</li>
+                <li id="orders">ORDER </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="ordersContent">
+        <img src="Images/Close.png" id="close">
+        <input spellcheck="false" type="text" placeholder="OwnerOfBike">
+        <input spellcheck="false" type="number" placeholder="ContactOfRider">
+        <button id="DriveBtn">Drive</button>
+
+    </div>
+
+    <div class="main">
+        <span class="sentence">Buy_.Our _.</span>
+        <span class="word">
+            <ul> 
+                <div id="BuyList">
+           <li class=" ">BIKES</li>
+           <li class=" ">Gears</li>
+           <li class=" ">Tires</li>
+           <li class=" ">Oils</li>
+        </div>
+        </ul>
+        </span>
+
+    </div>
+
+</body>
+
+<script>
+    var _0xe9fa = ['145549Oternr', '305776IVYZxW', 'Home', 'hidden', '1wxauEd', 'click', '1254157yGZCoi', '441041METLaL', '.ordersContent', 'getElementById', '469BHWOJB', 'currentTime', 'loop', 'play', '1103lxMDZp', '1dqbsLC', 'orders', 'Bikes', 'addEventListener', 'opacity', 'top', 'background', '664863gAlytP', 'style', 'pause', 'DriveBtn', '34696ARUgoI', 'BuyList'];
+    var _0x50c88b = _0x2350;
+    (function(_0x1b3baf, _0x2fb343) {
+        var _0x3b9023 = _0x2350;
+        while (!![]) {
+            try {
+                var _0x33acb2 = -parseInt(_0x3b9023(0x18f)) * parseInt(_0x3b9023(0x18c)) + -parseInt(_0x3b9023(0x186)) + -parseInt(_0x3b9023(0x189)) + parseInt(_0x3b9023(0x18e)) + parseInt(_0x3b9023(0x192)) * -parseInt(_0x3b9023(0x196)) + parseInt(_0x3b9023(0x19e)) + -parseInt(_0x3b9023(0x197)) * -parseInt(_0x3b9023(0x188));
+                if (_0x33acb2 === _0x2fb343) break;
+                else _0x1b3baf['push'](_0x1b3baf['shift']());
+            } catch (_0x5667ea) {
+                _0x1b3baf['push'](_0x1b3baf['shift']());
+            }
+        }
+    }(_0xe9fa, 0xbaf35));
+    var vdo = document['getElementById'](_0x50c88b(0x19d)),
+        Home = document[_0x50c88b(0x191)](_0x50c88b(0x18a)),
+        Bikes = document['getElementById'](_0x50c88b(0x199)),
+        Tires = document['getElementById']('Tires'),
+        orders = document[_0x50c88b(0x191)](_0x50c88b(0x198));
+    orders['addEventListener'](_0x50c88b(0x18d), order);
+
+    function _0x2350(_0x54dddd, _0x360d46) {
+        _0x54dddd = _0x54dddd - 0x183;
+        var _0xe9fa77 = _0xe9fa[_0x54dddd];
+        return _0xe9fa77;
+    }
+    var orderContent = document['querySelector'](_0x50c88b(0x190)),
+        BuyList = document['getElementById'](_0x50c88b(0x187));
+    document['getElementById'](_0x50c88b(0x185))[_0x50c88b(0x19a)](_0x50c88b(0x18d), order), document['getElementById']('close')[_0x50c88b(0x19a)](_0x50c88b(0x18d), () => {
+        orderContent['hidden'] = !![];
+    });
+    var LetTop = 0x0;
+    setInterval(() => {
+        var _0x373ea0 = _0x50c88b;
+        LetTop == -0x168 && (LetTop = 0x5a), LetTop += -0x5a, BuyList['style'][_0x373ea0(0x19c)] = LetTop + 'px';
+    }, 0x7d0), orderContent[_0x50c88b(0x18b)] = 'true', vdo[_0x50c88b(0x193)] = 0x0, Home[_0x50c88b(0x19a)]('click', () => {
+        var _0x5087f9 = _0x50c88b;
+        vdo[_0x5087f9(0x193)] = 0x0;
+    }), Bikes[_0x50c88b(0x19a)](_0x50c88b(0x18d), () => {
+        var _0x3ae0e0 = _0x50c88b;
+        vdo[_0x3ae0e0(0x193)] = 0x3, vdo[_0x3ae0e0(0x195)](), setTimeout(() => {
+            var _0xc3b1e2 = _0x3ae0e0;
+            vdo[_0xc3b1e2(0x184)]();
+        }, 0x7d0);
+    }), Tires['addEventListener'](_0x50c88b(0x18d), () => {
+        var _0x3beddd = _0x50c88b;
+        vdo[_0x3beddd(0x193)] = 0x0, vdo[_0x3beddd(0x195)](), setTimeout(() => {
+            var _0x30b74b = _0x3beddd;
+            vdo[_0x30b74b(0x184)]();
+        }, 0x7d0);
+    }), orders[_0x50c88b(0x19a)](_0x50c88b(0x18d), () => {
+        var _0x423400 = _0x50c88b;
+        vdo[_0x423400(0x193)] = 0x3;
+    });
+
+    function order() {
+        var _0x1d6fee = _0x50c88b;
+        vdo['currentTime'] = 0x5, vdo['play'](), vdo['removeAttribute'](_0x1d6fee(0x194)), orderContent[_0x1d6fee(0x18b)] = !orderContent[_0x1d6fee(0x18b)], orderContent[_0x1d6fee(0x183)][_0x1d6fee(0x19b)] = 0x1;
+    }
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var vdo = document.getElementById('background') // var Home = document.getElementById('Home') // var Bikes = document.getElementById('Bikes') // var Tires = document.getElementById('Tires') // var orders = document.getElementById('orders'); // orders.addEventListener('click',
+order) // var orderContent = document.querySelector('.ordersContent') // var BuyList = document.getElementById('BuyList'); // document.getElementById('DriveBtn').addEventListener('click', order) // document.getElementById('close').addEventListener('click',
+() => { // orderContent.hidden = true // }) // var LetTop = 0; // setInterval(() => { // if (LetTop == -360) { // LetTop = 90 // } // LetTop += -90 // BuyList.style.top = LetTop + "px"; // }, 2000); // orderContent.hidden = "true"; // vdo.currentTime
+= 0; // Home.addEventListener('click', () => { // vdo.currentTime = 0; // }) // Bikes.addEventListener('click', () => { // vdo.currentTime = 3; // vdo.play() // setTimeout(() => { // vdo.pause() // }, 2000); // }) // Tires.addEventListener('click', ()
+=> { // vdo.currentTime = 0; // vdo.play() // setTimeout(() => { // vdo.pause() // }, 2000); // }) // orders.addEventListener('click', () => { // vdo.currentTime = 3; // }) // function order() { // vdo.currentTime = 5; // vdo.play() // vdo.removeAttribute('loop')
+// orderContent.hidden = !orderContent.hidden; // orderContent.style.opacity = 1 // }
