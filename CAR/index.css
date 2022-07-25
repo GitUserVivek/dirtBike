@@ -1,0 +1,130 @@
+* {
+    transition: 0s;
+}
+
+body {
+    margin: auto;
+}
+
+.paint {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+}
+
+#car {
+    background: url("yellowcar.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 40px;
+    left: 450px;
+    top: 533px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0s;
+}
+
+#obj1 {
+    position: absolute;
+    background: url("obj1.png") no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 70px;
+    left: 30%;
+    top: 30%;
+}
+
+#obj2 {
+    position: absolute;
+    background: url("obj1.png") no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 70px;
+    left: 50%;
+    top: 60%;
+}
+
+#obj3 {
+    position: absolute;
+    background: url("obj1.png") no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 70px;
+    left: 50%;
+    top: 30%;
+}
+
+#roadline1 {
+    background: black;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 30px;
+    left: 635px;
+    top: 0px;
+    z-index: 0;
+}
+
+#roadline2 {
+    background: black;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 30px;
+    left: 635px;
+    top: 130px;
+    z-index: 0;
+}
+
+#roadline3 {
+    background: black;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 30px;
+    left: 635px;
+    top: 260px;
+    z-index: 0;
+}
+
+#roadline4 {
+    background: black;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 30px;
+    left: 635px;
+    top: 390px;
+    z-index: 0;
+}
+
+#roadline5 {
+    background: black;
+    position: absolute;
+    border: none;
+    height: 90px;
+    width: 30px;
+    left: 635px;
+    top: 520px;
+    z-index: 0;
+}
+
+#area {
+    background-color: #535353;
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 400px;
+    border: solid;
+}
+
+.rotateL {
+    transform: rotate( -14deg);
+}
+
+.rotateR {
+    transform: rotate( 14deg);
+}
