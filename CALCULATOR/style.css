@@ -1,0 +1,124 @@
+.container {
+    position: absolute;
+    height: 390px;
+    width: 245px;
+    background: #333;
+    border: solid;
+    top: 5%;
+    left: 30%;
+}
+
+#Screen {
+    position: absolute;
+    width: 89%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: solid white black;
+    border-radius: 10px;
+    top: -2%;
+    left: -14px;
+    height: 50px;
+    padding-top: 15px;
+}
+
+input {
+    padding: 10px;
+    border: solid transparent;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+    border: solid transparent;
+    border-radius: 5px;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.num {
+    display: block;
+    position: absolute;
+    top: 140px;
+    margin-top: 0px;
+}
+
+.oper {
+    position: absolute;
+    display: table-row;
+    top: 80px;
+    left: 5px;
+}
+
+.eq {
+    position: absolute;
+    top: 139px;
+    display: inline-grid;
+    left: 163px;
+}
+
+#N0 {
+    background: red;
+    position: absolute;
+    top: 180px;
+    left: 57px;
+}
+
+#Np {
+    position: absolute;
+    top: 180px;
+    left: 2px;
+    padding: 10;
+    padding: 10px;
+    display: none;
+    font-size: 22px;
+}
+
+#N00 {
+    position: absolute;
+    top: 178px;
+    padding-inline: 34px;
+    left: 111px;
+}
+
+.screen1 {
+    background: #333;
+    display: block;
+    width: 40px;
+    position: absolute;
+    left: -11px;
+    height: 0px;
+    font-size: 15px;
+    color: white;
+    top: 42px;
+}
+
+.screenO {
+    background: #333;
+    display: block;
+    width: 40px;
+    position: absolute;
+    left: 29px;
+    height: 0px;
+    font-size: 15px;
+    color: white;
+    top: 42px;
+}
+
+.screen2 {
+    background: #333;
+    display: block;
+    width: 40px;
+    position: absolute;
+    left: 68px;
+    height: 0px;
+    font-size: 15px;
+    color: white;
+    top: 42px;
+}
